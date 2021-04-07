@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1>{{total}}</h1>
+            <!-- Handling inline -->
+            <button @click="total++">Tambah</button>
+            <button @click="total--">Kurang</button>
+            <br>
+            <!-- Handling with method -->
+            <button @click="penambahan($event), notif()">Tambah</button>
+            <button @click="pengurangan">Kurang</button>
+        </div>
+
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

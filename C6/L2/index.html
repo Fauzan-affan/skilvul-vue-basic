@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1 v-if="angka === 0">Angka 0</h1>
+            <h1 v-else-if="angka < 0">Angka lebih kecil dari 0</h1>
+            <h1 v-else-if="angka > 0">Angka lebih besar dari 0</h1>
+            <h1 v-else>Bukan angka</h1>
+
+            <template v-if="tampilkan">
+                <h1>Joko</h1>
+                <h1>Susilo</h1>
+                <h1>Sudarsono</h1>
+            </template>
+
+            <h1 v-show="tampilkanTag">V-show</h1>
+            <h1 v-if="tampilkanTag">V-if</h1>
+        </div>
+
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

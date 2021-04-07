@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- v-for with array of string -->
+            <!-- <h1 v-for="nama in namaKarakter" :key="nama">{{nama}}</h1> -->
+            <!-- v-for with array of object -->
+            <!-- <h1 v-for="(karakter, index) in attackOnTitan" :key="index">{{index}} - {{karakter.namaDepan}} {{karakter.namaBelakang}}</h1> -->
+            <!-- v-for with array of array -->
+            <!-- <div v-for="(karakter, index) in attackOnTitanSkills" :key="index">
+                <h1>{{karakter.nama}}</h1>
+                <h3 v-for="skill in karakter.skills" :key="skill">{{skill}}</h3>
+            </div> -->
+            <!-- v-for with object -->
+            <!-- <h1 v-for="(karakter, key, index) in karakterAOT" :key="key">{{index}} - {{key}}: {{karakter}}</h1> -->
+            <!-- v-for with template -->
+            <!-- <template v-for="(karakter, key, index) in karakterAOT" :key="key">
+                <h1>{{karakter}}</h1>
+            </template> -->
+            <!-- key -->
+            <template v-for="nama in namaKarakter" :key="nama">
+                <h2>{{nama}}</h2>
+                <input type="text" placeholder="nama belakang">
+            </template>
+            <div>
+                <hr>
+                <button @click="acak">Acak</button>
+            </div>
+            <!-- conditional list rendering -->
+            <!-- <h1 v-for="(nama, index) in namaKarakterEren" :key="nama">
+                {{index}} - {{nama}}
+            </h1> -->
+        </div>
+
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

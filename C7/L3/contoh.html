@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Vue.js</title>
+        <!-- <style>
+            div {
+                padding: 50px;
+                background-color: rgba(255, 0, 0, 0.2);
+                text-align: center;
+                cursor: pointer;
+            }
+        </style> -->
+    </head>
+    <body>
+        <nav id="app">
+            <!-- .stop -->
+            <div @click="func2">
+                DIV 2
+                <div @click.stop="func1">DIV 1</div>
+            </div>
+            <!-- .prevent -->
+            <a href="" @click="show">Click me</a>
+            <!-- .capture -->
+            <div @click="func2">
+                DIV 2
+                <div @click="func1">DIV 1</div>
+            </div>
+            <!-- .self -->
+            <div @click.self="func2">
+                DIV 2
+                <div @click="func1">DIV 1</div>
+            </div>
+            <!-- .once -->
+            <button @click.once="show">Click me</button>
+        </nav>
+
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

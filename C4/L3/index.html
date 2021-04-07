@@ -1,0 +1,19 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1>Nilai rata-rata (Methods): {{methodRataRata()}}</h1>
+            <h1>Nilai rata-rata (Computed): {{nilaiRataRata}}</h1>
+
+            <button @click="tambahMataPelajaran(4, 'React.js', 95)">Tambah Mata Pelajaran</button>
+            <input type="text" v-model="nama">
+        </div>
+
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

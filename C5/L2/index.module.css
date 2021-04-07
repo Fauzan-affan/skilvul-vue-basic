@@ -1,0 +1,11 @@
+.underline {
+    text-decoration: underline;
+}
+
+.success {
+    color: forestgreen;
+}
+
+.failed {
+    color: darkred;
+}

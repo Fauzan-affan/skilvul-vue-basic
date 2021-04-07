@@ -1,0 +1,136 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          label {
+            font-weight: bold;
+            display: flex;
+            margin-bottom: 5px;
+          }
+
+          input + label {
+            font-weight: bold;
+            display: inline-flex;
+            margin-right: 20px;
+          }
+
+          input[type='text'],
+          textarea,
+          select {
+            display: block;
+            width: 400px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+        </style>
+        <title>Belajar Vue.js</title>
+    </head>
+    <body>
+      <!-- HTML tag form with vue -->
+      <div id="app">
+        <form>
+          <!-- input -->
+          <div>
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" />
+          </div>
+          <!-- textarea -->
+          <div>
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" placeholder="alamat"></textarea>
+          </div>
+          <!-- dropdown -->
+          <div>
+            <label for="negara">Negara</label>
+            <select id="negara">
+              <option value="">Pilih Negara</option>
+              <option value="indonesia">Indonesia</option>
+              <option value="australia">Australia</option>
+              <option value="singapore">Singapore</option>
+            </select>
+          </div>
+          <div>
+            <label for="tempat-kerja">Tempat Kerja</label>
+            <select id="tempat-kerja" multiple>
+              <option value="indonesia">Indonesia</option>
+              <option value="australia">Australia</option>
+              <option value="singapore">Singapore</option>
+            </select>
+          </div>
+          <!-- checkbox -->
+          <div>
+            <label for="remoteWork">Bekerja Remote?</label>
+            <input
+              id="remoteWork"
+              type="checkbox"
+              true-value="yes"
+              false-value="no"
+            />
+          </div>
+          <div>
+            <label>Skills</label>
+            <input
+              type="checkbox"
+              id="html"
+              value="html"
+            />
+            <label for="html">HTML</label>
+            <input
+              type="checkbox"
+              id="css"
+              value="css"
+            />
+            <label for="css">CSS</label>
+            <input
+              type="checkbox"
+              id="javascript"
+              value="javascript"
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+          <!-- radio -->
+          <div>
+            <label>Pengalaman Kerja</label>
+            <input
+              type="radio"
+              id="0-2"
+              value="0-2"
+            />
+            <label for="0-2">0-2</label>
+            <input
+              type="radio"
+              id="3-5"
+              value="3-5"
+            />
+            <label for="3-5">3-5</label>
+            <input
+              type="radio"
+              id="6-10"
+              value="6-10"
+            />
+            <label for="6-10">5-10</label>
+            <input
+              type="radio"
+              id="10+"
+              value="10+"
+            />
+            <label for="10+">10+</label>
+          </div>
+          <!-- submit -->
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

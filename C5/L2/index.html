@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="index.module.css">
+
+        <title>Belajar Vue.js</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- <h1 class="underline">Static Class</h1>
+
+            <h1 class="underline" :class="status">Dynamic Class</h1>
+
+            <h1 :class="isStatus && status">Conditional Logical Operator</h1>
+
+            <h1 :class="isStatus ? 'success' : 'failed'">Conditional Ternary Operator</h1> -->
+
+            <h1 :class="['underline', status]">Array Binding</h1>
+            <h1 :class="[isStatus && status, isStatus ? 'success' : 'failed']">Array Binding</h1>
+
+            <h1 :class="{
+                status: isStatus,
+                'success': isStatus,
+                'failed': !isStatus
+            }">Object Binding</h1>
+        </div>
+
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
